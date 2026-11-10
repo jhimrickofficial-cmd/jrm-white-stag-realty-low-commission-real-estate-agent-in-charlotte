@@ -1,5 +1,7 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>White Stag Realty | Premier Full-Service 1% Real Estate Brokerage</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>White Stag Realty | Premier Full-Service 1% Real Estate Brokerage</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -76,6 +78,15 @@
   transform: translateZ(16px);
 }
 
+/* Review Card Refined Hover Animation */
+.review-card-interactive {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.review-card-interactive:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -10px rgba(17, 24, 39, 0.12), 0 8px 16px -6px rgba(17, 24, 39, 0.06);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-duration: 0.01ms !important;
@@ -84,7 +95,8 @@
   }
   .tilt-property-card,
   .advisor-card,
-  .advisor-parallax-media {
+  .advisor-parallax-media,
+  .review-card-interactive {
     transform: none !important;
   }
   .tilt-glare,
@@ -92,11 +104,11 @@
     display: none !important;
   }
 }
-</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-variant":"#e3e2e0","surface-dim":"#dadad8","primary":"#000000","surface-container-highest":"#e3e2e0","on-error":"#ffffff","primary-fixed-dim":"#c0c6db","surface-container-lowest":"#ffffff","on-secondary-fixed":"#3f0300","tertiary-fixed":"#ffddba","primary-fixed":"#dce2f7","on-secondary-fixed-variant":"#8d1607","error":"#ba1a1a","primary-container":"#141b2b","surface-tint":"#575e70","inverse-primary":"#c0c6db","inverse-surface":"#2f3130","on-tertiary":"#ffffff","on-primary-fixed":"#141b2b","surface-bright":"#faf9f7","on-primary":"#ffffff","on-secondary-container":"#670700","on-error-container":"#93000a","secondary-fixed-dim":"#ffb4a6","background":"#faf9f7","on-tertiary-container":"#a37c51","tertiary":"#000000","on-background":"#1a1c1b","tertiary-fixed-dim":"#ecbe8e","secondary-container":"#fe684f","inverse-on-surface":"#f1f1ef","error-container":"#ffdad6","on-primary-fixed-variant":"#404758","surface":"#faf9f7","on-secondary":"#ffffff","tertiary-container":"#2b1700","surface-container-high":"#e9e8e6","surface-container-low":"#f4f3f1","on-surface":"#1a1c1b","outline":"#76777d","outline-variant":"#c6c6cd","surface-container":"#efeeec","secondary-fixed":"#ffdad4","on-primary-container":"#7d8497","on-tertiary-fixed":"#2b1700","on-tertiary-fixed-variant":"#5f401a","secondary":"#af301d","on-surface-variant":"#45464c"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","margin-desktop":"3rem","gutter":"1rem","margin":"1.25rem"},"fontFamily":{"headline-lg":["Newsreader"],"headline-lg-mobile":["Newsreader"],"body-sm":["Plus Jakarta Sans"],"display-mobile":["Newsreader"],"label-md":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Newsreader"],"display":["Newsreader"]},"fontSize":{"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"display-mobile":["36px",{"lineHeight":"42px","letterSpacing":"-0.015em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"30px","fontWeight":"500"}],"display":["48px",{"lineHeight":"54px","letterSpacing":"-0.02em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(17,24,39,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="overview" href="#"><div class="relative flex items-center justify-center p-0.5 bg-surface-container-high rounded-full group-hover:scale-105 transition-transform duration-300"><img alt="White Stag Realty Logo" class="w-8 h-8 object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyz53zP4JIMFjZhC5WTocc-kfyJpVkEMV2H2_Xkccn8s1ooZJDefJM-joudmMbgrDCBkevONueAx0nKU9q85TXTB2Ja1u6tPahYWOid-geVLs5Lkv-WpGg-kQ_FtRUkm7zCq-On3QAcip-nDCK1VXurY2QhIh-Uxrs8RKSiEK7ABVHf38SVlZOlzUPfxtg1j2o_iUJIhBuctZVFfY1kgIaJsnbI76fn0MBuKqJyPLq-qWuyxdZ8cNagw"></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-on-surface leading-none">White Stag</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mt-0.5">Realty • 1% Full Service</span></div></a></div><div class="flex items-center gap-space-md"><a class="hidden md:inline-flex items-center gap-space-xs font-label-lg text-label-lg text-on-surface bg-surface-container-lowest hover:bg-surface-container-high px-space-md py-2.5 rounded-full transition-all duration-200 shadow-[0_2px_8px_rgba(17,24,39,0.04)]" href="tel:9807774440"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><span>(980) 777-4440</span></a><button aria-label="Toggle Menu Drawer" class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-primary text-on-primary hover:bg-surface-container-highest hover:text-on-surface transition-all duration-300 active:scale-95" id="drawer-toggle-btn" type="button"><span class="material-symbols-outlined text-[20px]">menu</span><span class="font-label-caps text-label-caps uppercase tracking-wider hidden sm:inline">Menu</span></button></div></div></header><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300 ease-out" id="offcanvas-backdrop"></div><aside class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-surface-container-lowest z-50 shadow-[0_12px_48px_rgba(17,24,39,0.12)] flex flex-col translate-x-full transition-transform duration-300 ease-out" id="offcanvas-drawer"><div class="h-20 px-space-xl flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-space-sm"><img alt="White Stag Realty Logo" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyz53zP4JIMFjZhC5WTocc-kfyJpVkEMV2H2_Xkccn8s1ooZJDefJM-joudmMbgrDCBkevONueAx0nKU9q85TXTB2Ja1u6tPahYWOid-geVLs5Lkv-WpGg-kQ_FtRUkm7zCq-On3QAcip-nDCK1VXurY2QhIh-Uxrs8RKSiEK7ABVHf38SVlZOlzUPfxtg1j2o_iUJIhBuctZVFfY1kgIaJsnbI76fn0MBuKqJyPLq-qWuyxdZ8cNagw"><span class="font-headline-md text-headline-md text-on-surface">White Stag Realty</span></div><button aria-label="Close Drawer" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-surface-container-highest text-on-surface transition-colors" id="drawer-close-btn" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="flex-1 overflow-y-auto px-space-xl py-space-lg flex flex-col justify-between gap-space-xl"><div class="space-y-space-md"><p class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Navigation</p><nav class="flex flex-col gap-1" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a aria-current="page" class="drawer-nav-item py-2.5 px-3 transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="overview" href="#overview">Overview</a><a class="drawer-nav-item py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-headline-md text-headline-md" data-path="advantages" href="#advantages">Advantages &amp; 1% Model</a><a class="drawer-nav-item py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-headline-md text-headline-md" data-path="featured-listings" href="#featured-listings">Featured Properties</a><a class="drawer-nav-item py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-headline-md text-headline-md" data-path="our-agents" href="#our-agents">Premier Broker Roster</a><a class="drawer-nav-item py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-headline-md text-headline-md" data-path="reviews" href="#reviews">Client Stories &amp; Reviews</a><a class="drawer-nav-item py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-headline-md text-headline-md" data-path="contact-and-booking" href="#contact-and-booking">Consultation &amp; Booking</a></nav></div><div class="space-y-space-lg pt-space-md"><div class="p-space-lg bg-surface-container-low rounded-xl space-y-space-sm"><span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Direct Broker Line</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[20px]">phone_in_talk</span><a class="font-headline-sm text-headline-sm text-on-surface hover:text-secondary transition-colors" href="tel:9807774440">(980) 777-4440</a></div><p class="font-body-sm text-body-sm text-on-surface-variant">Available 7 days a week for private listing valuations and buyer representation.</p></div><div class="space-y-space-xs"><a class="drawer-nav-item flex items-center justify-between w-full p-3.5 bg-secondary text-on-secondary rounded-xl hover:opacity-95 transition-opacity font-label-lg text-label-lg" href="#contact-and-booking"><span>Schedule Listing Consultation</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div><div class="space-y-1 text-on-surface-variant font-body-sm text-body-sm"><p class="font-medium text-on-surface">North &amp; South Carolina Licensed Firm</p><p>NC Real Estate Commission Lic. #C32840</p><p>SC Real Estate Commission Lic. #26892</p></div></div></div></aside><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-variant":"#e3e2e0","surface-dim":"#dadad8","primary":"#000000","surface-container-highest":"#e3e2e0","on-error":"#ffffff","primary-fixed-dim":"#c0c6db","surface-container-lowest":"#ffffff","on-secondary-fixed":"#3f0300","tertiary-fixed":"#ffddba","primary-fixed":"#dce2f7","on-secondary-fixed-variant":"#8d1607","error":"#ba1a1a","primary-container":"#141b2b","surface-tint":"#575e70","inverse-primary":"#c0c6db","inverse-surface":"#2f3130","on-tertiary":"#ffffff","on-primary-fixed":"#141b2b","surface-bright":"#faf9f7","on-primary":"#ffffff","on-secondary-container":"#670700","on-error-container":"#93000a","secondary-fixed-dim":"#ffb4a6","background":"#faf9f7","on-tertiary-container":"#a37c51","tertiary":"#000000","on-background":"#1a1c1b","tertiary-fixed-dim":"#ecbe8e","secondary-container":"#fe684f","inverse-on-surface":"#f1f1ef","error-container":"#ffdad6","on-primary-fixed-variant":"#404758","surface":"#faf9f7","on-secondary":"#ffffff","tertiary-container":"#2b1700","surface-container-high":"#e9e8e6","surface-container-low":"#f4f3f1","on-surface":"#1a1c1b","outline":"#76777d","outline-variant":"#c6c6cd","surface-container":"#efeeec","secondary-fixed":"#ffdad4","on-primary-container":"#7d8497","on-tertiary-fixed":"#2b1700","on-tertiary-fixed-variant":"#5f401a","secondary":"#af301d","on-surface-variant":"#45464c"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-desktop":"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","margin-desktop":"3rem","gutter":"1rem","margin":"1.25rem"},"fontFamily":{"headline-lg":["Newsreader"],"headline-lg-mobile":["Newsreader"],"body-sm":["Plus Jakarta Sans"],"display-mobile":["Newsreader"],"label-md":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Newsreader"],"display":["Newsreader"]},"fontSize":{"headline-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"display-mobile":["36px",{"lineHeight":"42px","letterSpacing":"-0.015em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"600"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.12em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"30px","fontWeight":"500"}],"display":["48px",{"lineHeight":"54px","letterSpacing":"-0.02em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 inset-x-0 z-40 bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(17,24,39,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm group" data-path="overview" href="#"><div class="relative flex items-center justify-center p-0.5 bg-surface-container-high rounded-full group-hover:scale-105 transition-transform duration-300"><img alt="White Stag Realty Logo" class="w-8 h-8 object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyz53zP4JIMFjZhC5WTocc-kfyJpVkEMV2H2_Xkccn8s1ooZJDefJM-joudmMbgrDCBkevONueAx0nKU9q85TXTB2Ja1u6tPahYWOid-geVLs5Lkv-WpGg-kQ_FtRUkm7zCq-On3QAcip-nDCK1VXurY2QhIh-Uxrs8RKSiEK7ABVHf38SVlZOlzUPfxtg1j2o_iUJIhBuctZVFfY1kgIaJsnbI76fn0MBuKqJyPLq-qWuyxdZ8cNagw"/></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-on-surface leading-none">White Stag</span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest mt-0.5">Realty • 1% Full Service</span></div></a></div><div class="flex items-center gap-space-md"><a class="hidden md:inline-flex items-center gap-space-xs font-label-lg text-label-lg text-on-surface bg-surface-container-lowest hover:bg-surface-container-high px-space-md py-2.5 rounded-full transition-all duration-200 shadow-[0_2px_8px_rgba(17,24,39,0.04)]" href="tel:9807774440"><span class="material-symbols-outlined text-[18px] text-secondary">call</span><span>(980) 777-4440</span></a><button aria-label="Toggle Menu Drawer" class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-primary text-on-primary hover:bg-surface-container-highest hover:text-on-surface transition-all duration-300 active:scale-95" id="drawer-toggle-btn" type="button"><span class="material-symbols-outlined text-[20px]">menu</span><span class="font-label-caps text-label-caps uppercase tracking-wider hidden sm:inline">Menu</span></button></div></div></header><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300 ease-out" id="offcanvas-backdrop"></div><aside class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-surface-container-lowest z-50 shadow-[0_12px_48px_rgba(17,24,39,0.12)] flex flex-col translate-x-full transition-transform duration-300 ease-out" id="offcanvas-drawer"><div class="h-20 px-space-xl flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-space-sm"><img alt="White Stag Realty Logo" class="w-8 h-8 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyz53zP4JIMFjZhC5WTocc-kfyJpVkEMV2H2_Xkccn8s1ooZJDefJM-joudmMbgrDCBkevONueAx0nKU9q85TXTB2Ja1u6tPahYWOid-geVLs5Lkv-WpGg-kQ_FtRUkm7zCq-On3QAcip-nDCK1VXurY2QhIh-Uxrs8RKSiEK7ABVHf38SVlZOlzUPfxtg1j2o_iUJIhBuctZVFfY1kgIaJsnbI76fn0MBuKqJyPLq-qWuyxdZ8cNagw"/><span class="font-headline-md text-headline-md text-on-surface">White Stag Realty</span></div><button aria-label="Close Drawer" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container hover:bg-surface-container-highest text-on-surface transition-colors" id="drawer-close-btn" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="flex-1 overflow-y-auto px-space-xl py-space-lg flex flex-col justify-between gap-space-xl"><div class="space-y-space-md"><p class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Navigation</p><nav class="flex flex-col gap-1" data-active-classes="bg-surface-container-high text-on-surface font-semibold rounded-lg"><a aria-current="page" class="drawer-nav-item py-2.5 px-3 transition-colors bg-surface-container-high text-on-surface font-semibold rounded-lg" data-path="overview" href="#overview">Overview</a><a class="drawer-nav-item py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-headline-md text-headline-md" data-path="advantages" href="#advantages">Advantages &amp; 1% Model</a><a class="drawer-nav-item py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-headline-md text-headline-md" data-path="featured-listings" href="#featured-listings">Featured Properties</a><a class="drawer-nav-item py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-headline-md text-headline-md" data-path="our-agents" href="#our-agents">Premier Broker Roster</a><a class="drawer-nav-item py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-headline-md text-headline-md" data-path="reviews" href="#reviews">Client Stories &amp; Reviews</a><a class="drawer-nav-item py-2.5 px-3 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-headline-md text-headline-md" data-path="contact-and-booking" href="#contact-and-booking">Consultation &amp; Booking</a></nav></div><div class="space-y-space-lg pt-space-md"><div class="p-space-lg bg-surface-container-low rounded-xl space-y-space-sm"><span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Direct Broker Line</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[20px]">phone_in_talk</span><a class="font-headline-sm text-headline-sm text-on-surface hover:text-secondary transition-colors" href="tel:9807774440">(980) 777-4440</a></div><p class="font-body-sm text-body-sm text-on-surface-variant">Available 7 days a week for private listing valuations and buyer representation.</p></div><div class="space-y-space-xs"><a class="drawer-nav-item flex items-center justify-between w-full p-3.5 bg-secondary text-on-secondary rounded-xl hover:opacity-95 transition-opacity font-label-lg text-label-lg" href="#contact-and-booking"><span>Schedule Listing Consultation</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a></div><div class="space-y-1 text-on-surface-variant font-body-sm text-body-sm"><p class="font-medium text-on-surface">North &amp; South Carolina Licensed Firm</p><p>NC Real Estate Commission Lic. #C32840</p><p>SC Real Estate Commission Lic. #26892</p></div></div></div></aside><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
 <!-- SECTION 1: HERO SECTION -->
 <section class="-mt-20 relative w-full min-h-[92vh] flex items-center justify-center bg-surface-container-highest overflow-hidden" id="overview">
 <!-- Hero Background Image & Atmospheric Scrim -->
-<div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBvuYHNV2uH_fs9rYJr82yMdvB7_YlmMzgD5UsELRMyAPKMARwobs2vUleJYqfoWZsHd75GQJ8Gdo1C-iUrZ-19Yl-KWVTARnUxjG4poWdrbTtGo1Z6m42-4YYyp4fbd24svg-q-n6ismQmP-WpIN3b8s2tVYhzb-I3kwWDRa_mpxDSf-8p4MHsyadEhqSTFZgPay3cN3-sV3zXXNfuaNB8matzKqvE32taeiQL00IQ&quot;);"></div>
+<div class="absolute inset-0 z-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvuYHNV2uH_fs9rYJr82yMdvB7_YlmMzgD5UsELRMyAPKMARwobs2vUleJYqfoWZsHd75GQJ8Gdo1C-iUrZ-19Yl-KWVTARnUxjG4poWdrbTtGo1Z6m42-4YYyp4fbd24svg-q-n6ismQmP-WpIN3b8s2tVYhzb-I3kwWDRa_mpxDSf-8p4MHsyadEhqSTFZgPay3cN3-sV3zXXNfuaNB8matzKqvE32taeiQL00IQ");'></div>
 <div class="absolute inset-0 z-10 bg-gradient-to-t from-primary/95 via-primary/65 to-primary/40"></div>
 <div class="relative z-20 w-full max-w-7xl mx-auto px-margin-desktop pt-32 pb-20 flex flex-col justify-between h-full min-h-[85vh]">
 <!-- Top Eyebrow Badging -->
@@ -117,7 +129,7 @@
 <div class="my-auto py-12 max-w-4xl space-y-space-md reveal-on-scroll animate-fade-in-up">
 <p class="font-label-caps text-label-caps uppercase tracking-[0.25em] text-secondary-fixed">Architectural Real Estate Precision</p>
 <h1 class="font-display text-display text-surface-bright tracking-tight leading-[1.08] drop-shadow-sm">
-          Premium Representation. <br>
+          Premium Representation. <br/>
 <span class="italic font-light text-surface-variant">1% Full-Service</span> Listing Commission.
         </h1>
 <p class="font-body-lg text-body-lg text-surface-container-high max-w-2xl leading-relaxed pt-2">
@@ -234,7 +246,7 @@
 <span class="font-label-lg text-label-lg text-on-surface">Property Sale Price:</span>
 <span class="font-display text-[32px] text-secondary font-medium" id="slider-home-val-label">$850,000</span>
 </div>
-<input class="w-full h-2.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-secondary focus:outline-none" id="savings-slider" max="2500000" min="300000" step="25000" type="range" value="850000">
+<input class="w-full h-2.5 bg-surface-variant rounded-lg appearance-none cursor-pointer accent-secondary focus:outline-none" id="savings-slider" max="2500000" min="300000" step="25000" type="range" value="850000"/>
 <div class="flex justify-between font-label-caps text-label-caps text-on-surface-variant">
 <span>$300,000</span>
 <span>$1,400,000</span>
@@ -355,7 +367,7 @@
 <div class="tilt-property-wrapper reveal-on-scroll delay-100 animate-fade-in-up">
 <div class="tilt-property-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px) scale3d(1, 1, 1); --mouse-x: 28.36474609375px; --mouse-y: 71.005126953125px;">
 <div class="tilt-glare"></div>
-<div class="relative h-60 w-full overflow-hidden"><img alt="100 Golf Club Drive Charlotte" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf5Z8ixtrO24wRWbnV-7DYE8-_VRs8o7x-ZmdK1pvfcIrKYJlO6suZgzfzGQ3JkXkZQRyYxwmEoJovneMpFIRRs5CeykYSOLIteuLvSMfD-_wy4c8HEj1lLNCqIUGUotVWAcSC5GjWwkkkrhUcm3-EGEAxlBoRr_wlGUJLcG5Kc9dgK6SNkpgxbuo77USegmf6bIzFrWfJy41tP82polF87jy-BTzVuBIey2HgFVM3rgskkxs8ljklOw"><div class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-caps text-label-caps px-2.5 py-1 rounded backdrop-blur-md shadow-sm">FEATURED ESTATE</div><div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-caps text-label-caps px-2 py-1 rounded shadow-sm">1% FEE SAVED $37,000</div></div>
+<div class="relative h-60 w-full overflow-hidden"><img alt="100 Golf Club Drive Charlotte" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf5Z8ixtrO24wRWbnV-7DYE8-_VRs8o7x-ZmdK1pvfcIrKYJlO6suZgzfzGQ3JkXkZQRyYxwmEoJovneMpFIRRs5CeykYSOLIteuLvSMfD-_wy4c8HEj1lLNCqIUGUotVWAcSC5GjWwkkkrhUcm3-EGEAxlBoRr_wlGUJLcG5Kc9dgK6SNkpgxbuo77USegmf6bIzFrWfJy41tP82polF87jy-BTzVuBIey2HgFVM3rgskkxs8ljklOw"/><div class="absolute top-3 left-3 bg-secondary text-on-secondary font-label-caps text-label-caps px-2.5 py-1 rounded backdrop-blur-md shadow-sm">FEATURED ESTATE</div><div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-caps text-label-caps px-2 py-1 rounded shadow-sm">1% FEE SAVED $37,000</div></div>
 <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
 <div>
 <p class="font-headline-lg text-headline-lg text-on-surface font-medium">$1,850,000</p>
@@ -378,7 +390,7 @@
 <div class="tilt-property-wrapper reveal-on-scroll delay-200 animate-fade-in-up">
 <div class="tilt-property-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px) scale3d(1, 1, 1); --mouse-x: 3.392608642578125px; --mouse-y: 71.76953125px;">
 <div class="tilt-glare"></div>
-<div class="relative h-60 w-full overflow-hidden"><img alt="5510 Army Road 22, Marshville NC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbhCvI3r8Zy0yP6RbR2YtoKp-GiVI6viy8mlofjGck9XYUmc6gY34c9HkUVvTAqKUbFQOHwAWGOI04t-oCHFTw04KX6dEQrqaGcxtCtl5I3QjBvwoCpVF6JHcQp4fFlWupJiHZXG8ZtGrgYVlqIxPrag5Rjp0KfJqPODG9WeafjYHR1Ygu8I5DT0bwaJTlGFQnZlqkJr20r9tecCnDAQYVXfCxcKEyKlK0Ur2ovbX6"><div class="absolute top-3 left-3 bg-surface-container-highest text-on-surface font-label-caps text-label-caps px-2.5 py-1 rounded backdrop-blur-md shadow-sm">UNDER CONTRACT</div><div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-caps text-label-caps px-2 py-1 rounded shadow-sm">1% LISTING</div></div>
+<div class="relative h-60 w-full overflow-hidden"><img alt="5510 Army Road 22, Marshville NC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbhCvI3r8Zy0yP6RbR2YtoKp-GiVI6viy8mlofjGck9XYUmc6gY34c9HkUVvTAqKUbFQOHwAWGOI04t-oCHFTw04KX6dEQrqaGcxtCtl5I3QjBvwoCpVF6JHcQp4fFlWupJiHZXG8ZtGrgYVlqIxPrag5Rjp0KfJqPODG9WeafjYHR1Ygu8I5DT0bwaJTlGFQnZlqkJr20r9tecCnDAQYVXfCxcKEyKlK0Ur2ovbX6"/><div class="absolute top-3 left-3 bg-surface-container-highest text-on-surface font-label-caps text-label-caps px-2.5 py-1 rounded backdrop-blur-md shadow-sm">UNDER CONTRACT</div><div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-caps text-label-caps px-2 py-1 rounded shadow-sm">1% LISTING</div></div>
 <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
 <div>
 <p class="font-headline-lg text-headline-lg text-on-surface font-medium">$659,900</p>
@@ -401,7 +413,7 @@
 <div class="tilt-property-wrapper reveal-on-scroll delay-300 animate-fade-in-up">
 <div class="tilt-property-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px) scale3d(1, 1, 1); --mouse-x: 152px; --mouse-y: 190.39990234375px;">
 <div class="tilt-glare"></div>
-<div class="relative h-60 w-full overflow-hidden"><img alt="173 Calvin Creek Dr, Troutman NC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBaIBB88-NVjgIoO2vPcO7Z-lc7nBY_VHzCv3zzKn8PIpRc7n5DgTf0A4uQmcbSSjcq3xnITBy93j5P_PD0huGlMMB7o0z8bu7ElcxghGIB-68zFJ52gHoeNupFFUoC-RGHiuOAa-JOMuJl6gZhPubgVhh5eqbBzR3BDTWFPYQFM_r0-F1SXh7ann3JE24_NVFndvOThoT9dpU4jX4jjUftVOQ-DinNFN7D8WE59Vi"><div class="absolute top-3 left-3 bg-primary text-on-primary font-label-caps text-label-caps px-2.5 py-1 rounded backdrop-blur-md shadow-sm">LAKE REGION</div><div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-caps text-label-caps px-2 py-1 rounded shadow-sm">$8,300 SAVED</div></div>
+<div class="relative h-60 w-full overflow-hidden"><img alt="173 Calvin Creek Dr, Troutman NC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBaIBB88-NVjgIoO2vPcO7Z-lc7nBY_VHzCv3zzKn8PIpRc7n5DgTf0A4uQmcbSSjcq3xnITBy93j5P_PD0huGlMMB7o0z8bu7ElcxghGIB-68zFJ52gHoeNupFFUoC-RGHiuOAa-JOMuJl6gZhPubgVhh5eqbBzR3BDTWFPYQFM_r0-F1SXh7ann3JE24_NVFndvOThoT9dpU4jX4jjUftVOQ-DinNFN7D8WE59Vi"/><div class="absolute top-3 left-3 bg-primary text-on-primary font-label-caps text-label-caps px-2.5 py-1 rounded backdrop-blur-md shadow-sm">LAKE REGION</div><div class="absolute top-3 right-3 bg-surface/90 backdrop-blur-md text-on-surface font-label-caps text-label-caps px-2 py-1 rounded shadow-sm">$8,300 SAVED</div></div>
 <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
 <div>
 <p class="font-headline-lg text-headline-lg text-on-surface font-medium">$415,000</p>
@@ -424,7 +436,7 @@
 <div class="tilt-property-wrapper reveal-on-scroll delay-400 animate-fade-in-up">
 <div class="tilt-property-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full" style="transform: perspective(1000px) rotateX(0deg) rotateY(0deg) translate3d(0px, 0px, 0px) scale3d(1, 1, 1); --mouse-x: 47.99151611328125px; --mouse-y: 251.39306640625px;">
 <div class="tilt-glare"></div>
-<div class="relative h-60 w-full overflow-hidden"><img alt="404 Blue Mind Way 76, Asheville NC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiVtQr6yzoyszXO1NSHSEU14iAikIUMp2Di1aKNWygAiFto_nsNevI0zLL0di6OftEf4yO7lUoeYQX_uZBLaxoIfsg36qXoaP2mtrqGwd9uIN81UZiF3dakI2GVZYYwO2sxCStvsioc-NTVV8uJ_msfcd4E9WYE4vzCC_PtWDyOwbET3oPbwabhY2lA2ZE6h6zDegEj2qn0VYx4Y7-fLP3zlINZWiRBcwoNOCpt6sQ"><div class="absolute top-3 left-3 bg-secondary-fixed-dim text-on-secondary-fixed font-label-caps text-label-caps px-2.5 py-1 rounded backdrop-blur-md shadow-sm">ASHEVILLE ENCLAVE</div></div>
+<div class="relative h-60 w-full overflow-hidden"><img alt="404 Blue Mind Way 76, Asheville NC" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiVtQr6yzoyszXO1NSHSEU14iAikIUMp2Di1aKNWygAiFto_nsNevI0zLL0di6OftEf4yO7lUoeYQX_uZBLaxoIfsg36qXoaP2mtrqGwd9uIN81UZiF3dakI2GVZYYwO2sxCStvsioc-NTVV8uJ_msfcd4E9WYE4vzCC_PtWDyOwbET3oPbwabhY2lA2ZE6h6zDegEj2qn0VYx4Y7-fLP3zlINZWiRBcwoNOCpt6sQ"/><div class="absolute top-3 left-3 bg-secondary-fixed-dim text-on-secondary-fixed font-label-caps text-label-caps px-2.5 py-1 rounded backdrop-blur-md shadow-sm">ASHEVILLE ENCLAVE</div></div>
 <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
 <div>
 <p class="font-headline-lg text-headline-lg text-on-surface font-medium">$169,000</p>
@@ -469,7 +481,7 @@
 <div class="advisor-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full">
 <div class="advisor-glare"></div>
 <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high advisor-parallax-media">
-<img alt="Josh Dilmaghani Broker in Charge" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhkO2HREGBcNNWZR6YQJbTHrlQSiwdUTZ0PyI5hD-mEzbrMYbpmKOM-msDvj3pm28g3E1TpRJLy5UG3bIMeezrJWm7xzW8dfhG_gA_6vEBI6KA0L1TKdmAvOJt-e1ZTMlzo74Bh5J1ratAty6R9Z_Vekl3urq6xkAqe7H2oRUj_kIBnvLekhVdz4J1aByTZbQa6o5UbJRuOM8mEoLqX4-JsMw69pdkZf2oaxhZ7NYZj1m24O3bKSgKow" style="object-fit: cover; object-position: 50% 18%;">
+<img alt="Josh Dilmaghani Broker in Charge" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhkO2HREGBcNNWZR6YQJbTHrlQSiwdUTZ0PyI5hD-mEzbrMYbpmKOM-msDvj3pm28g3E1TpRJLy5UG3bIMeezrJWm7xzW8dfhG_gA_6vEBI6KA0L1TKdmAvOJt-e1ZTMlzo74Bh5J1ratAty6R9Z_Vekl3urq6xkAqe7H2oRUj_kIBnvLekhVdz4J1aByTZbQa6o5UbJRuOM8mEoLqX4-JsMw69pdkZf2oaxhZ7NYZj1m24O3bKSgKow" style="object-fit: cover; object-position: 50% 18%;"/>
 <div class="advisor-badge-layer absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded text-on-surface font-label-caps text-label-caps shadow-sm">
       FOUNDER &amp; MANAGING BROKER
     </div>
@@ -500,7 +512,7 @@
 <div class="advisor-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full">
 <div class="advisor-glare"></div>
 <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high advisor-parallax-media">
-<img alt="Paul Posta Charlotte Real Estate Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_u9k4R-4l06sL34NtSFdUIfNE6l8xRNj4MpM7WJEUzhtp38N46ubI5QfVGvl5XumPMo1zsS1j5lw9bqjJKH-sudFNozAj11XQEQE2jtlCmf22fysFR_ViSV0aKmiLseb9fMxHxreQo94tq6PEAfbmY7x3LLDX76OWnjLtAGN0wU3v5fb1jTzzRfM2nUe0-gKtTWAXN6KJ9XyvuCc2Am6nvYZFSdGYftCRqeZCX_admS_vbadP-edAKQ" style="object-fit: cover; object-position: center 8%; transform: scale(1.16); transform-origin: center 15%;">
+<img alt="Paul Posta Charlotte Real Estate Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_u9k4R-4l06sL34NtSFdUIfNE6l8xRNj4MpM7WJEUzhtp38N46ubI5QfVGvl5XumPMo1zsS1j5lw9bqjJKH-sudFNozAj11XQEQE2jtlCmf22fysFR_ViSV0aKmiLseb9fMxHxreQo94tq6PEAfbmY7x3LLDX76OWnjLtAGN0wU3v5fb1jTzzRfM2nUe0-gKtTWAXN6KJ9XyvuCc2Am6nvYZFSdGYftCRqeZCX_admS_vbadP-edAKQ" style="object-fit: cover; object-position: center 8%; transform: scale(1.16); transform-origin: center 15%;"/>
 <div class="advisor-badge-layer absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded text-on-surface font-label-caps text-label-caps shadow-sm">
       TOP PRODUCER
     </div>
@@ -531,7 +543,7 @@
 <div class="advisor-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full">
 <div class="advisor-glare"></div>
 <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high advisor-parallax-media">
-<img alt="Ethan Kamholtz Real Estate Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEmPb4W2mveHXEJbu41Ax_J3LObO_MJDMi-XMKSr-3hCfGvCRI08Pc-9zrAdAhOp2x1OT-XxsuO_1uD64YEo-56dSCw10wfO4JV__5kJ3AzWxdHFI9MYIIZAmqA2RUG5uItZAQgza_jxSFjnQqUIm3c0XP-0eZA8bqHGbylXvhetHgSuPWYv1IpKxSye7qDLQoMJs4J1a5h7YpiJFZedu94p6mv1pkQ6_lJu-tXwy6tUh-wISQ_UYJiw" style="object-fit: cover; object-position: 50% 16%;">
+<img alt="Ethan Kamholtz Real Estate Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEmPb4W2mveHXEJbu41Ax_J3LObO_MJDMi-XMKSr-3hCfGvCRI08Pc-9zrAdAhOp2x1OT-XxsuO_1uD64YEo-56dSCw10wfO4JV__5kJ3AzWxdHFI9MYIIZAmqA2RUG5uItZAQgza_jxSFjnQqUIm3c0XP-0eZA8bqHGbylXvhetHgSuPWYv1IpKxSye7qDLQoMJs4J1a5h7YpiJFZedu94p6mv1pkQ6_lJu-tXwy6tUh-wISQ_UYJiw" style="object-fit: cover; object-position: 50% 16%;"/>
 <div class="advisor-badge-layer absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded text-on-surface font-label-caps text-label-caps shadow-sm">
       METRO ADVISOR
     </div>
@@ -562,7 +574,7 @@
 <div class="advisor-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full">
 <div class="advisor-glare"></div>
 <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high advisor-parallax-media">
-<img alt="Tania Hall Real Estate Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvHMWRH59CfCTqsxaicGgCXYmPsfW9Ep6TTo_xEgH3wG9MPxVASjPvhTUmPQrVYFN_okjb1UzGl8j_c3WZqF0T3mb75eI6nxSXiFXSrwQuKfu9DToxOPwwgEJAnJPyqQpeSkrB4Is_u_DF-fRh-FlF_Fr86MTO5885J4EiMl3PneD4L9hRDn258FowfSfd7tH3-FPnd8rnIzo-_eanQMye4RlcH6tcVyU5MsLOMwQxmG5BDeCxuIgl3A" style="object-fit: cover; object-position: 50% 18%;">
+<img alt="Tania Hall Real Estate Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvHMWRH59CfCTqsxaicGgCXYmPsfW9Ep6TTo_xEgH3wG9MPxVASjPvhTUmPQrVYFN_okjb1UzGl8j_c3WZqF0T3mb75eI6nxSXiFXSrwQuKfu9DToxOPwwgEJAnJPyqQpeSkrB4Is_u_DF-fRh-FlF_Fr86MTO5885J4EiMl3PneD4L9hRDn258FowfSfd7tH3-FPnd8rnIzo-_eanQMye4RlcH6tcVyU5MsLOMwQxmG5BDeCxuIgl3A" style="object-fit: cover; object-position: 50% 18%;"/>
 <div class="advisor-badge-layer absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded text-on-surface font-label-caps text-label-caps shadow-sm">
       RESIDENTIAL SPECIALIST
     </div>
@@ -593,7 +605,7 @@
 <div class="advisor-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full">
 <div class="advisor-glare"></div>
 <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high advisor-parallax-media">
-<img alt="Thomas Haygood Real Estate Broker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaZYZHjmNpMCtMhNR61JofeN-HjeGauDAV-UNFycfUr8yQhLbjJKY8PQiBtI99Az8s4SSFyjXG30DpnjCSlWxtHpPgJ-VkOOPnBN2ebgk6SofOfOnoCd3xCv-uMTOI0YGoA4TUfV77JLHMDbCnj6XUMw9ciF8fxVNXVjWdczC0hyNw4PC7CDm_7v3S9ovefJSmi_zPRPe1z2rRzyXGpb2T-NJtvUQVIKfZTp_22rdXOB7ZA-ugvqBWTw" style="object-fit: cover; object-position: 50% 15%;">
+<img alt="Thomas Haygood Real Estate Broker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaZYZHjmNpMCtMhNR61JofeN-HjeGauDAV-UNFycfUr8yQhLbjJKY8PQiBtI99Az8s4SSFyjXG30DpnjCSlWxtHpPgJ-VkOOPnBN2ebgk6SofOfOnoCd3xCv-uMTOI0YGoA4TUfV77JLHMDbCnj6XUMw9ciF8fxVNXVjWdczC0hyNw4PC7CDm_7v3S9ovefJSmi_zPRPe1z2rRzyXGpb2T-NJtvUQVIKfZTp_22rdXOB7ZA-ugvqBWTw" style="object-fit: cover; object-position: 50% 15%;"/>
 <div class="advisor-badge-layer absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded text-on-surface font-label-caps text-label-caps shadow-sm">
       CAROLINA BROKER
     </div>
@@ -624,7 +636,7 @@
 <div class="advisor-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full">
 <div class="advisor-glare"></div>
 <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high advisor-parallax-media">
-<img alt="Karyn Wilson Real Estate Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqHnKTs7JGbqtrpy9RP3_rQ5iI9hc5il4ma6EfCXg8HOdYKQEcCbxvyDvYyIomAPfeCdYb9Y-HB6cxJWS4y7JQVLs5PdA7kJkylorvHKI_bIPd-sP-u-B_YAeeDfrSsUNS0xwMKlkDngE2rnCJzmJX7N-p8gzLxE8tuJbY39qgubRiNtdNl1Mmn9MrrCY7lJ_G0VI46bFxY0lvb6HhwCzsb1vx4IIPOFaBnQzF7xdKBvGeiFC9AXlpSA" style="object-fit: cover; object-position: 50% 16%;">
+<img alt="Karyn Wilson Real Estate Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqHnKTs7JGbqtrpy9RP3_rQ5iI9hc5il4ma6EfCXg8HOdYKQEcCbxvyDvYyIomAPfeCdYb9Y-HB6cxJWS4y7JQVLs5PdA7kJkylorvHKI_bIPd-sP-u-B_YAeeDfrSsUNS0xwMKlkDngE2rnCJzmJX7N-p8gzLxE8tuJbY39qgubRiNtdNl1Mmn9MrrCY7lJ_G0VI46bFxY0lvb6HhwCzsb1vx4IIPOFaBnQzF7xdKBvGeiFC9AXlpSA" style="object-fit: cover; object-position: 50% 16%;"/>
 <div class="advisor-badge-layer absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded text-on-surface font-label-caps text-label-caps shadow-sm">
       CLIENT ADVOCATE
     </div>
@@ -655,7 +667,7 @@
 <div class="advisor-card group relative bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl cursor-pointer flex flex-col h-full">
 <div class="advisor-glare"></div>
 <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-high advisor-parallax-media">
-<img alt="Joanna Dilmaghani Real Estate Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP7G9PJ6Ir5DXUGSC3ZMBotjpNgZlbewQRQPrPxsVwq0t16N7NDRDoIwCOBIiKxsa99dNb8A6588URY7V67iMfhRTio9BsP24fzYSAFDttr_X9NrJmQm3emhbbv8A07XlTkuouk-jLhdm-MFgKnuuSWhHptN61MMSZAsuLewMv6PZKUwFCOdihJdC-asAdyTNxJ8HL5osRlWsu-EMynxed4A_uAmtV_elCjfuhGhoylF8rf2n_E2PPAQ" style="object-fit: cover; object-position: 50% 18%;">
+<img alt="Joanna Dilmaghani Real Estate Agent" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBP7G9PJ6Ir5DXUGSC3ZMBotjpNgZlbewQRQPrPxsVwq0t16N7NDRDoIwCOBIiKxsa99dNb8A6588URY7V67iMfhRTio9BsP24fzYSAFDttr_X9NrJmQm3emhbbv8A07XlTkuouk-jLhdm-MFgKnuuSWhHptN61MMSZAsuLewMv6PZKUwFCOdihJdC-asAdyTNxJ8HL5osRlWsu-EMynxed4A_uAmtV_elCjfuhGhoylF8rf2n_E2PPAQ" style="object-fit: cover; object-position: 50% 18%;"/>
 <div class="advisor-badge-layer absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded text-on-surface font-label-caps text-label-caps shadow-sm">
       PORTFOLIO STRATEGIST
     </div>
@@ -722,19 +734,19 @@
             See how North Carolina sellers maximize net proceeds without ever compromising on white-glove communication.
           </p>
 </div>
-<div class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="group flex items-center gap-3 bg-surface-container-lowest p-4 rounded-xl shadow-sm border border-transparent hover:border-secondary/30 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-md cursor-pointer">
 <div class="flex flex-col">
-<div class="flex items-center gap-1 text-secondary">
+<div class="flex items-center gap-1 text-secondary group-hover:scale-105 transition-transform duration-300 origin-left">
 <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">5.0 Star Rated</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1 group-hover:text-secondary transition-colors duration-300">5.0 Star Rated</span>
 </div>
 <div class="pl-4 border-l border-surface-variant flex flex-col justify-center">
-<span class="font-label-caps text-label-caps uppercase text-on-surface-variant">Verified By</span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant group-hover:text-secondary transition-colors duration-300">Verified By</span>
 <span class="font-label-md text-label-md text-on-surface">Google &amp; Trustindex</span>
 </div>
 </div>
@@ -742,69 +754,69 @@
 <!-- Testimonial Cards Grid -->
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 <!-- Review 1: Ed Conway -->
-<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between space-y-6 reveal-on-scroll delay-100 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl cursor-pointer animate-fade-in-up">
+<div class="review-card-interactive group p-8 bg-surface-container-lowest rounded-xl shadow-sm border border-transparent hover:border-secondary/25 hover:bg-surface-bright flex flex-col justify-between space-y-6 reveal-on-scroll delay-100 cursor-pointer animate-fade-in-up">
 <div class="space-y-4">
-<div class="flex items-center gap-1 text-secondary">
+<div class="flex items-center gap-1 text-secondary group-hover:scale-105 transition-transform duration-300 origin-left">
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface italic leading-relaxed transition-colors duration-300">
               “Josh stood out immediately among all brokers we interviewed. His architectural understanding of the market, responsiveness, and professional negotiation secured multiple offers within 4 days. Saving nearly $20,000 on commission was just the icing on the cake.”
             </p>
 </div>
-<div class="pt-4 border-t border-surface-container flex items-center justify-between">
+<div class="pt-4 border-t border-surface-container group-hover:border-secondary/20 flex items-center justify-between transition-colors duration-300">
 <div>
-<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Ed Conway</h4>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary font-semibold transition-colors duration-300">Ed Conway</h4>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Seller • Charlotte Metro</p>
 </div>
-<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<span class="material-symbols-outlined text-secondary text-[24px] group-hover:scale-110 group-hover:text-secondary-container transition-all duration-300">verified</span>
 </div>
 </div>
 <!-- Review 2: Joe Henderson -->
-<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between space-y-6 reveal-on-scroll delay-200 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl cursor-pointer animate-fade-in-up">
+<div class="review-card-interactive group p-8 bg-surface-container-lowest rounded-xl shadow-sm border border-transparent hover:border-secondary/25 hover:bg-surface-bright flex flex-col justify-between space-y-6 reveal-on-scroll delay-200 cursor-pointer animate-fade-in-up">
 <div class="space-y-4">
-<div class="flex items-center gap-1 text-secondary">
+<div class="flex items-center gap-1 text-secondary group-hover:scale-105 transition-transform duration-300 origin-left">
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface italic leading-relaxed transition-colors duration-300">
               “You get way more than you pay for with Josh and the White Stag team. Complete listing syndication on Zillow, high-end photography, digital lockboxes, and constant updates. Traditional 3% listing agents could not hold a candle to this level of dedication.”
             </p>
 </div>
-<div class="pt-4 border-t border-surface-container flex items-center justify-between">
+<div class="pt-4 border-t border-surface-container group-hover:border-secondary/20 flex items-center justify-between transition-colors duration-300">
 <div>
-<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Joe Henderson</h4>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary font-semibold transition-colors duration-300">Joe Henderson</h4>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Seller • Huntersville / LKN</p>
 </div>
-<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<span class="material-symbols-outlined text-secondary text-[24px] group-hover:scale-110 group-hover:text-secondary-container transition-all duration-300">verified</span>
 </div>
 </div>
 <!-- Review 3: Client of Paul Posta -->
-<div class="p-8 bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between space-y-6 reveal-on-scroll delay-300 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl cursor-pointer animate-fade-in-up">
+<div class="review-card-interactive group p-8 bg-surface-container-lowest rounded-xl shadow-sm border border-transparent hover:border-secondary/25 hover:bg-surface-bright flex flex-col justify-between space-y-6 reveal-on-scroll delay-300 cursor-pointer animate-fade-in-up">
 <div class="space-y-4">
-<div class="flex items-center gap-1 text-secondary">
+<div class="flex items-center gap-1 text-secondary group-hover:scale-105 transition-transform duration-300 origin-left">
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+<p class="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface italic leading-relaxed transition-colors duration-300">
               “Paul Posta handled every aspect of our sale with calm expertise. From the initial valuation walk-through to closing day, he answered every call within minutes. We netted significantly higher than anticipated while keeping our equity intact.”
             </p>
 </div>
-<div class="pt-4 border-t border-surface-container flex items-center justify-between">
+<div class="pt-4 border-t border-surface-container group-hover:border-secondary/20 flex items-center justify-between transition-colors duration-300">
 <div>
-<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Sarah &amp; Michael T.</h4>
+<h4 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary font-semibold transition-colors duration-300">Sarah &amp; Michael T.</h4>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Sellers • Waxhaw Enclave</p>
 </div>
-<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+<span class="material-symbols-outlined text-secondary text-[24px] group-hover:scale-110 group-hover:text-secondary-container transition-all duration-300">verified</span>
 </div>
 </div>
 </div>
@@ -825,35 +837,35 @@
             </p>
 </div>
 <!-- Direct Coordinates -->
-<div class="p-6 bg-surface-container-low rounded-xl space-y-4">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">call</span>
+<div class="p-6 bg-surface-container-low rounded-xl space-y-4 border border-transparent hover:border-black/20 hover:-translate-y-1 hover:shadow-md transition-all duration-300 ease-out cursor-default">
+<div class="group/coord flex items-start gap-4 p-2.5 -mx-2.5 rounded-lg hover:bg-surface-container-lowest transition-all duration-300 ease-out cursor-pointer hover:-translate-y-0.5 hover:shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5 group-hover/coord:scale-110 transition-transform duration-300">call</span>
 <div>
-<p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Direct Office Line</p>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant group-hover/coord:text-secondary transition-colors duration-300">Direct Office Line</p>
 <a class="font-headline-md text-headline-md text-on-surface hover:text-secondary transition-colors" href="tel:9807774440">(980) 777-4440</a>
 <p class="font-body-sm text-body-sm text-on-surface-variant">Available 7 days a week: 8am – 8pm EST</p>
 </div>
 </div>
-<div class="flex items-start gap-4 pt-2">
-<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">mail</span>
+<div class="group/coord flex items-start gap-4 p-2.5 -mx-2.5 rounded-lg hover:bg-surface-container-lowest transition-all duration-300 ease-out cursor-pointer hover:-translate-y-0.5 hover:shadow-sm pt-2">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5 group-hover/coord:scale-110 transition-transform duration-300">mail</span>
 <div>
-<p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Direct Inquiries</p>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant group-hover/coord:text-secondary transition-colors duration-300">Direct Inquiries</p>
 <a class="font-headline-sm text-headline-sm text-on-surface hover:text-secondary transition-colors" href="mailto:info@whitestagrealty.com">info@whitestagrealty.com</a>
 </div>
 </div>
-<div class="flex items-start gap-4 pt-2">
-<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">location_on</span>
+<div class="group/coord flex items-start gap-4 p-2.5 -mx-2.5 rounded-lg hover:bg-surface-container-lowest transition-all duration-300 ease-out cursor-pointer hover:-translate-y-0.5 hover:shadow-sm pt-2">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5 group-hover/coord:scale-110 transition-transform duration-300">location_on</span>
 <div>
-<p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Charlotte Headquarters</p>
-<p class="font-body-md text-body-md text-on-surface font-medium">1026 Jay St, Suite B165<br>Charlotte, NC 28208</p>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant group-hover/coord:text-secondary transition-colors duration-300">Charlotte Headquarters</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">1026 Jay St, Suite B165<br/>Charlotte, NC 28208</p>
 </div>
 </div>
 </div>
 <!-- Equal Housing Opportunity Module -->
-<div class="p-6 bg-surface-container-lowest rounded-xl shadow-sm flex items-center gap-5">
-<img alt="Equal Housing Opportunity Logo" class="w-14 h-14 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCZ9HUXmC5kQ8vIaoBXPMPm_SIojokpUpSwEMmGJhYdxTVrrIb_Ivpl_w5kqF6JoyPu74I3QVI3kr5TdF0QWqxKMGWNCJ4fAft6EgkPR87KB5_GAeYuqM7Y-Z75_mdbAAG40FMquwn8dnq9uFRIE3sjFMkzY3Cm5r9DXsGAS8KOGkvDPiAqiVw9bfEvozvMBCBlKf1VwhGUiUq5vQSDkugHQeah1wXLjKi0u83b2F7Oiyi3eK0kfzxYA">
+<div class="group p-6 bg-surface-container-lowest rounded-xl shadow-sm border border-transparent hover:border-black/20 hover:-translate-y-1 hover:shadow-md flex items-center gap-5 transition-all duration-300 ease-out cursor-default">
+<img alt="Equal Housing Opportunity Logo" class="w-14 h-14 object-contain group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCZ9HUXmC5kQ8vIaoBXPMPm_SIojokpUpSwEMmGJhYdxTVrrIb_Ivpl_w5kqF6JoyPu74I3QVI3kr5TdF0QWqxKMGWNCJ4fAft6EgkPR87KB5_GAeYuqM7Y-Z75_mdbAAG40FMquwn8dnq9uFRIE3sjFMkzY3Cm5r9DXsGAS8KOGkvDPiAqiVw9bfEvozvMBCBlKf1VwhGUiUq5vQSDkugHQeah1wXLjKi0u83b2F7Oiyi3eK0kfzxYA"/>
 <div class="space-y-1">
-<h3 class="font-headline-sm text-headline-sm text-on-surface">Equal Housing Opportunity</h3>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors duration-300">Equal Housing Opportunity</h3>
 <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
                 White Stag Realty strictly adheres to the Federal Fair Housing Act. Licensed North Carolina &amp; South Carolina Real Estate Brokerage.
               </p>
@@ -861,34 +873,34 @@
 </div>
 </div>
 <!-- Right: Modern Luxury Booking & Valuation Form -->
-<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-2xl shadow-xl reveal-on-scroll delay-200 transition-all duration-300 hover:shadow-xl animate-fade-in-up">
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-2xl shadow-xl border border-transparent hover:border-black/20 hover:-translate-y-1 hover:shadow-2xl reveal-on-scroll delay-200 transition-all duration-300 ease-out animate-fade-in-up">
 <form class="space-y-6" id="booking-form" onsubmit="event.preventDefault(); alert('Thank you. A White Stag Broker will reach out within 2 hours with your custom listing evaluation.');">
 <div class="space-y-1">
 <span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Step 1 of 1</span>
 <h3 class="font-headline-lg text-headline-lg text-on-surface">Schedule Home Valuation &amp; 1% Consultation</h3>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="space-y-1.5">
-<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Full Legal Name *</label>
-<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-secondary text-[15px]" placeholder="e.g. Katherine Vance" required="" type="text">
+<div class="space-y-1.5 group/input">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant group-hover/input:text-secondary transition-colors duration-200">Full Legal Name *</label>
+<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-bright hover:bg-surface-container transition-all duration-200 text-[15px]" placeholder="e.g. Katherine Vance" required="" type="text"/>
 </div>
-<div class="space-y-1.5">
-<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Phone Number *</label>
-<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-secondary text-[15px]" placeholder="(980) 000-0000" required="" type="tel">
+<div class="space-y-1.5 group/input">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant group-hover/input:text-secondary transition-colors duration-200">Phone Number *</label>
+<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-bright hover:bg-surface-container transition-all duration-200 text-[15px]" placeholder="(980) 000-0000" required="" type="tel"/>
 </div>
 </div>
-<div class="space-y-1.5">
-<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Email Address *</label>
-<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-secondary text-[15px]" placeholder="client@example.com" required="" type="email">
+<div class="space-y-1.5 group/input">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant group-hover/input:text-secondary transition-colors duration-200">Email Address *</label>
+<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-bright hover:bg-surface-container transition-all duration-200 text-[15px]" placeholder="client@example.com" required="" type="email"/>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-<div class="sm:col-span-2 space-y-1.5">
-<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Property Street Address</label>
-<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-secondary text-[15px]" placeholder="123 Myers Park Blvd, Charlotte" type="text">
+<div class="sm:col-span-2 space-y-1.5 group/input">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant group-hover/input:text-secondary transition-colors duration-200">Property Street Address</label>
+<input class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-bright hover:bg-surface-container transition-all duration-200 text-[15px]" placeholder="123 Myers Park Blvd, Charlotte" type="text"/>
 </div>
-<div class="space-y-1.5">
-<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Estimated Value</label>
-<select class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary text-[15px]">
+<div class="space-y-1.5 group/input">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant group-hover/input:text-secondary transition-colors duration-200">Estimated Value</label>
+<select class="w-full h-[52px] px-4 rounded-xl bg-surface-container-low text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-bright hover:bg-surface-container transition-all duration-200 text-[15px]">
 <option>$400k - $600k</option>
 <option>$600k - $900k</option>
 <option selected="">$900k - $1.5M</option>
@@ -896,12 +908,12 @@
 </select>
 </div>
 </div>
-<div class="space-y-1.5">
-<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Preferred Consultation Time &amp; Notes</label>
-<textarea class="w-full p-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-secondary text-[15px]" placeholder="Tell us about your home, timing, or questions about the 1% listing structure..." rows="3"></textarea>
+<div class="space-y-1.5 group/input">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant group-hover/input:text-secondary transition-colors duration-200">Preferred Consultation Time &amp; Notes</label>
+<textarea class="w-full p-4 rounded-xl bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-surface-bright hover:bg-surface-container transition-all duration-200 text-[15px]" placeholder="Tell us about your home, timing, or questions about the 1% listing structure..." rows="3"></textarea>
 </div>
 <div class="pt-2">
-<button class="w-full h-[54px] bg-secondary hover:bg-secondary/90 text-on-secondary font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 transition-transform active:scale-98 shadow-md" type="submit">
+<button class="w-full h-[54px] bg-secondary hover:bg-secondary/90 text-on-secondary font-label-lg text-label-lg rounded-xl flex items-center justify-center gap-2 transition-transform active:scale-98 shadow-md hover:shadow-lg" type="submit">
 <span>Request 1% Valuation &amp; Representation Dossier</span>
 <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
 </button>
@@ -1096,7 +1108,7 @@
       }
     });
   </script>
-</div></main><footer class="w-full bg-surface-container-low text-on-surface py-space-xl"><div class="max-w-7xl mx-auto px-margin-desktop space-y-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg pb-space-lg"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><img alt="White Stag Realty Logo" class="w-8 h-8 object-contain rounded-full bg-surface-container-lowest p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyz53zP4JIMFjZhC5WTocc-kfyJpVkEMV2H2_Xkccn8s1ooZJDefJM-joudmMbgrDCBkevONueAx0nKU9q85TXTB2Ja1u6tPahYWOid-geVLs5Lkv-WpGg-kQ_FtRUkm7zCq-On3QAcip-nDCK1VXurY2QhIh-Uxrs8RKSiEK7ABVHf38SVlZOlzUPfxtg1j2o_iUJIhBuctZVFfY1kgIaJsnbI76fn0MBuKqJyPLq-qWuyxdZ8cNagw"><span class="font-headline-md text-headline-md">White Stag Realty</span></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Architectural precision and bespoke representation. We deliver complete MLS exposure, high-definition cinematography, and top-tier negotiation for a 1% listing fee.</p><div class="flex items-center gap-space-sm pt-space-xs"><img alt="White Stag Realty Logo" class="w-8 h-8 object-contain rounded-full bg-surface-container-lowest p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyz53zP4JIMFjZhC5WTocc-kfyJpVkEMV2H2_Xkccn8s1ooZJDefJM-joudmMbgrDCBkevONueAx0nKU9q85TXTB2Ja1u6tPahYWOid-geVLs5Lkv-WpGg-kQ_FtRUkm7zCq-On3QAcip-nDCK1VXurY2QhIh-Uxrs8RKSiEK7ABVHf38SVlZOlzUPfxtg1j2o_iUJIhBuctZVFfY1kgIaJsnbI76fn0MBuKqJyPLq-qWuyxdZ8cNagw"><span class="font-headline-md text-headline-md">White Stag Realty</span></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Primary Service Hubs</h4><ul class="space-y-1.5 font-body-md text-body-md text-on-surface-variant"><li>Mecklenburg County (Charlotte, Huntersville, Cornelius)</li><li>Union County (Waxhaw, Weddington, Marvin)</li><li>Cabarrus County (Concord, Harrisburg)</li><li>Iredell County (Mooresville, Lake Norman)</li><li>York &amp; Lancaster Counties, SC</li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Concierge &amp; Office</h4><div class="space-y-2 font-body-md text-body-md text-on-surface-variant"><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">phone</span><a class="hover:text-on-surface transition-colors" href="tel:9807774440">(980) 777-4440</a></p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">mail</span><span>concierge@whitestagrealty.com</span></p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">location_on</span><span>Charlotte Metropolitan Headquarters, NC</span></p></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Regulatory &amp; Disclosures</h4><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">White Stag Realty is a licensed real estate firm in North Carolina and South Carolina. All material presented herein is intended for information purposes only. While information is believed to be accurate, it is represented subject to errors, omissions, changes, or withdrawal without notice.</p><div class="pt-space-xs"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Standard 1% listing fee does not include recommended buyer agent compensation.</span></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div>© 2025 White Stag Realty LLC. All Rights Reserved. Equal Housing Opportunity.</div><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Agency</a><a class="hover:text-on-surface transition-colors" href="#">MLS Compliance</a></div></div></div></footer><script>(function(){const toggleBtn=document.getElementById('drawer-toggle-btn');const closeBtn=document.getElementById('drawer-close-btn');const backdrop=document.getElementById('offcanvas-backdrop');const drawer=document.getElementById('offcanvas-drawer');const drawerLinks=document.querySelectorAll('.drawer-nav-item');function openDrawer(){drawer.classList.remove('translate-x-full');backdrop.classList.remove('opacity-0','pointer-events-none');document.body.style.overflow='hidden';}function closeDrawer(){drawer.classList.add('translate-x-full');backdrop.classList.add('opacity-0','pointer-events-none');document.body.style.overflow='';}if(toggleBtn){toggleBtn.addEventListener('click',openDrawer);}if(closeBtn){closeBtn.addEventListener('click',closeDrawer);}if(backdrop){backdrop.addEventListener('click',closeDrawer);}drawerLinks.forEach(link=>{link.addEventListener('click',closeDrawer);});document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDrawer();}});})();</script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface py-space-xl"><div class="max-w-7xl mx-auto px-margin-desktop space-y-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg pb-space-lg"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><img alt="White Stag Realty Logo" class="w-8 h-8 object-contain rounded-full bg-surface-container-lowest p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyz53zP4JIMFjZhC5WTocc-kfyJpVkEMV2H2_Xkccn8s1ooZJDefJM-joudmMbgrDCBkevONueAx0nKU9q85TXTB2Ja1u6tPahYWOid-geVLs5Lkv-WpGg-kQ_FtRUkm7zCq-On3QAcip-nDCK1VXurY2QhIh-Uxrs8RKSiEK7ABVHf38SVlZOlzUPfxtg1j2o_iUJIhBuctZVFfY1kgIaJsnbI76fn0MBuKqJyPLq-qWuyxdZ8cNagw"/><span class="font-headline-md text-headline-md">White Stag Realty</span></div><p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Architectural precision and bespoke representation. We deliver complete MLS exposure, high-definition cinematography, and top-tier negotiation for a 1% listing fee.</p><div class="flex items-center gap-space-sm pt-space-xs"><img alt="White Stag Realty Logo" class="w-8 h-8 object-contain rounded-full bg-surface-container-lowest p-0.5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyz53zP4JIMFjZhC5WTocc-kfyJpVkEMV2H2_Xkccn8s1ooZJDefJM-joudmMbgrDCBkevONueAx0nKU9q85TXTB2Ja1u6tPahYWOid-geVLs5Lkv-WpGg-kQ_FtRUkm7zCq-On3QAcip-nDCK1VXurY2QhIh-Uxrs8RKSiEK7ABVHf38SVlZOlzUPfxtg1j2o_iUJIhBuctZVFfY1kgIaJsnbI76fn0MBuKqJyPLq-qWuyxdZ8cNagw"/><span class="font-headline-md text-headline-md">White Stag Realty</span></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Primary Service Hubs</h4><ul class="space-y-1.5 font-body-md text-body-md text-on-surface-variant"><li>Mecklenburg County (Charlotte, Huntersville, Cornelius)</li><li>Union County (Waxhaw, Weddington, Marvin)</li><li>Cabarrus County (Concord, Harrisburg)</li><li>Iredell County (Mooresville, Lake Norman)</li><li>York &amp; Lancaster Counties, SC</li></ul></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Concierge &amp; Office</h4><div class="space-y-2 font-body-md text-body-md text-on-surface-variant"><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-secondary">phone</span><a class="hover:text-on-surface transition-colors" href="tel:9807774440">(980) 777-4440</a></p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">mail</span><span>concierge@whitestagrealty.com</span></p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">location_on</span><span>Charlotte Metropolitan Headquarters, NC</span></p></div></div><div class="space-y-space-sm"><h4 class="font-headline-sm text-headline-sm text-on-surface">Regulatory &amp; Disclosures</h4><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">White Stag Realty is a licensed real estate firm in North Carolina and South Carolina. All material presented herein is intended for information purposes only. While information is believed to be accurate, it is represented subject to errors, omissions, changes, or withdrawal without notice.</p><div class="pt-space-xs"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Standard 1% listing fee does not include recommended buyer agent compensation.</span></div></div></div><div class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div>© 2025 White Stag Realty LLC. All Rights Reserved. Equal Housing Opportunity.</div><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Agency</a><a class="hover:text-on-surface transition-colors" href="#">MLS Compliance</a></div></div></div></footer><script>(function(){const toggleBtn=document.getElementById('drawer-toggle-btn');const closeBtn=document.getElementById('drawer-close-btn');const backdrop=document.getElementById('offcanvas-backdrop');const drawer=document.getElementById('offcanvas-drawer');const drawerLinks=document.querySelectorAll('.drawer-nav-item');function openDrawer(){drawer.classList.remove('translate-x-full');backdrop.classList.remove('opacity-0','pointer-events-none');document.body.style.overflow='hidden';}function closeDrawer(){drawer.classList.add('translate-x-full');backdrop.classList.add('opacity-0','pointer-events-none');document.body.style.overflow='';}if(toggleBtn){toggleBtn.addEventListener('click',openDrawer);}if(closeBtn){closeBtn.addEventListener('click',closeDrawer);}if(backdrop){backdrop.addEventListener('click',closeDrawer);}drawerLinks.forEach(link=>{link.addEventListener('click',closeDrawer);});document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeDrawer();}});})();</script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   const animatedElements = document.querySelectorAll('.reveal-on-scroll');
@@ -1111,6 +1123,4 @@ document.addEventListener('DOMContentLoaded', () => {
   animatedElements.forEach(el => observer.observe(el));
 });
 </script>
-
-
 </body></html>
