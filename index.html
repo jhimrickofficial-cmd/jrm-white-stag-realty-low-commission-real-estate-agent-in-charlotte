@@ -835,6 +835,506 @@
       </div>
     </section>
 
+<!-- ============================================
+ WHITE STAG REALTY — MEET OUR TEAM
+ Insert after About section, before Reviews.
+ Photos should be inside the /agents/ folder.
+============================================= -->
+
+<style>
+  .ws-team {
+    background: #f8f6f1;
+    padding: 110px 0;
+    font-family: "DM Sans", Arial, sans-serif;
+  }
+
+  .ws-team *,
+  .ws-team *::before,
+  .ws-team *::after {
+    box-sizing: border-box;
+  }
+
+  .ws-team-container {
+    width: min(1240px, calc(100% - 64px));
+    margin: 0 auto;
+  }
+
+  .ws-team-header {
+    max-width: 780px;
+    margin: 0 auto 58px;
+    text-align: center;
+  }
+
+  .ws-team-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 11px;
+    letter-spacing: .19em;
+    font-weight: 700;
+    color: #987a4b;
+    text-transform: uppercase;
+  }
+
+  .ws-team-eyebrow::before,
+  .ws-team-eyebrow::after {
+    content: "";
+    width: 24px;
+    height: 1px;
+    background: #c5a46d;
+  }
+
+  .ws-team-header h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(36px, 4.2vw, 58px);
+    font-weight: 500;
+    letter-spacing: -.035em;
+    line-height: 1.17;
+    color: #17352d;
+    margin: 22px 0;
+  }
+
+  .ws-team-header h2 em {
+    color: #aa8953;
+    font-weight: 400;
+  }
+
+  .ws-team-header p {
+    color: #65716b;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 670px;
+    margin: 0 auto;
+  }
+
+  .ws-team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 26px;
+    justify-content: center;
+  }
+
+  .ws-agent {
+    background: #fff;
+    border: 1px solid #e5e7df;
+    overflow: hidden;
+    transition:
+      transform .35s ease,
+      box-shadow .35s ease;
+  }
+
+  .ws-agent:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(17, 39, 31, .12);
+  }
+
+  .ws-agent-photo {
+    width: 100%;
+    aspect-ratio: 3 / 3.45;
+    overflow: hidden;
+    position: relative;
+    background: #e6e8e2;
+  }
+
+  .ws-agent-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center 24%;
+    transition: transform .7s cubic-bezier(.22,1,.36,1);
+  }
+
+  .ws-agent:hover .ws-agent-photo img {
+    transform: scale(1.055);
+  }
+
+  .ws-agent-photo::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 22%;
+    background: linear-gradient(transparent, rgba(15,38,29,.12));
+    pointer-events: none;
+  }
+
+  .ws-agent-info {
+    padding: 24px 21px 25px;
+    text-align: center;
+  }
+
+  .ws-agent-info h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #17352d;
+    margin: 0 0 8px;
+  }
+
+  .ws-agent-role {
+    display: block;
+    color: #a18555;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+  }
+
+  .ws-agent-contact {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+  }
+
+  .ws-agent-contact a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    flex: 1;
+    padding: 11px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .25s ease;
+  }
+
+  .ws-agent-call {
+    background: #17352d;
+    color: #fff;
+    border: 1px solid #17352d;
+  }
+
+  .ws-agent-call:hover {
+    background: #285343;
+    color: #fff;
+  }
+
+  .ws-agent-email {
+    background: transparent;
+    color: #17352d;
+    border: 1px solid #cbd3c8;
+  }
+
+  .ws-agent-email:hover {
+    background: #eee9de;
+    border-color: #c5a46d;
+  }
+
+  .ws-agent-contact svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .ws-team-bottom {
+    margin-top: 53px;
+    text-align: center;
+  }
+
+  .ws-team-bottom p {
+    color: #65716b;
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  .ws-team-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: #17352d;
+    color: #fff;
+    padding: 17px 27px;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s ease;
+  }
+
+  .ws-team-cta:hover {
+    background: #285343;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+
+  @media (max-width: 1100px) {
+    .ws-team-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 750px) {
+    .ws-team {
+      padding: 75px 0;
+    }
+
+    .ws-team-container {
+      width: calc(100% - 36px);
+    }
+
+    .ws-team-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .ws-agent-info {
+      padding: 18px 12px;
+    }
+
+    .ws-agent-info h3 {
+      font-size: 19px;
+    }
+
+    .ws-agent-contact {
+      flex-direction: column;
+    }
+
+    .ws-team-header {
+      margin-bottom: 38px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .ws-team-grid {
+      grid-template-columns: 1fr;
+      max-width: 330px;
+      margin: 0 auto;
+      gap: 22px;
+    }
+
+    .ws-agent-photo {
+      aspect-ratio: 3 / 3.3;
+    }
+
+    .ws-agent-contact {
+      flex-direction: row;
+    }
+
+    .ws-agent-info h3 {
+      font-size: 23px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ws-team *,
+    .ws-team *::before,
+    .ws-team *::after {
+      transition: none !important;
+    }
+  }
+</style>
+
+<section class="ws-team" id="our-team">
+  <div class="ws-team-container">
+
+    <div class="ws-team-header">
+      <span class="ws-team-eyebrow">
+        THE PEOPLE BEHIND WHITE STAG
+      </span>
+
+      <h2>
+        Meet the Experts Behind<br>
+        <em>Your Next Move.</em>
+      </h2>
+
+      <p>
+        Real estate is personal, and so is our approach.
+        Meet the dedicated White Stag Realty professionals
+        helping buyers and sellers navigate the North
+        Carolina market with confidence.
+      </p>
+    </div>
+
+    <div class="ws-team-grid">
+
+      <!-- JOSH DILMAGHANI -->
+      <article class="ws-agent">
+        <div class="ws-agent-photo">
+          <img
+            src="agents/josh-dilmaghani.jpg"
+            alt="Josh Dilmaghani, White Stag Realty"
+            loading="lazy">
+        </div>
+
+        <div class="ws-agent-info">
+          <h3>Josh Dilmaghani</h3>
+          <span class="ws-agent-role">Real Estate Broker</span>
+          <div class="ws-agent-contact">
+            <a href="tel:+19807774440" class="ws-agent-call">
+              Call Agent ↗
+            </a>
+            <a href="mailto:joshdilmaghani@whitestagrealty.com" class="ws-agent-email">
+              Email ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PAUL POSTA -->
+      <article class="ws-agent">
+        <div class="ws-agent-photo">
+          <img
+            src="agents/paul-posta.jpg"
+            alt="Paul Posta, White Stag Realty"
+            loading="lazy">
+        </div>
+
+        <div class="ws-agent-info">
+          <h3>Paul Posta</h3>
+          <span class="ws-agent-role">Real Estate Agent</span>
+          <div class="ws-agent-contact">
+            <a href="tel:+19807777285" class="ws-agent-call">
+              Call Agent ↗
+            </a>
+            <a href="mailto:paulposta@whitestagrealtync.com" class="ws-agent-email">
+              Email ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ETHAN KAMHOLTZ -->
+      <article class="ws-agent">
+        <div class="ws-agent-photo">
+          <img
+            src="agents/ethan-kamholtz.jpg"
+            alt="Ethan Kamholtz, White Stag Realty"
+            loading="lazy">
+        </div>
+
+        <div class="ws-agent-info">
+          <h3>Ethan Kamholtz</h3>
+          <span class="ws-agent-role">Real Estate Agent</span>
+          <div class="ws-agent-contact">
+            <a href="tel:+19805562855" class="ws-agent-call">
+              Call Agent ↗
+            </a>
+            <a href="mailto:ethankamholtz@whitestagrealtync.com" class="ws-agent-email">
+              Email ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- KARYN WILSON -->
+      <article class="ws-agent">
+        <div class="ws-agent-photo">
+          <img
+            src="agents/karyn-wilson.jpg"
+            alt="Karyn Wilson, White Stag Realty"
+            loading="lazy">
+        </div>
+
+        <div class="ws-agent-info">
+          <h3>Karyn Wilson</h3>
+          <span class="ws-agent-role">Real Estate Agent</span>
+          <div class="ws-agent-contact">
+            <a href="tel:+15164931078" class="ws-agent-call">
+              Call Agent ↗
+            </a>
+            <a href="mailto:KarynWilson@whitestagrealtync.com" class="ws-agent-email">
+              Email ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- THOMAS HAYGOOD -->
+      <article class="ws-agent">
+        <div class="ws-agent-photo">
+          <img
+            src="agents/thomas-haygood.jpg"
+            alt="Thomas Haygood, White Stag Realty"
+            loading="lazy">
+        </div>
+
+        <div class="ws-agent-info">
+          <h3>Thomas Haygood</h3>
+          <span class="ws-agent-role">Real Estate Broker</span>
+          <div class="ws-agent-contact">
+            <a href="tel:+16783334479" class="ws-agent-call">
+              Call Agent ↗
+            </a>
+            <a href="mailto:thomashaygood@whitestagrealtync.com" class="ws-agent-email">
+              Email ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- TANIA WAHL -->
+      <article class="ws-agent">
+        <div class="ws-agent-photo">
+          <img
+            src="agents/tania-wahl.jpg"
+            alt="Tania Wahl, White Stag Realty"
+            loading="lazy">
+        </div>
+
+        <div class="ws-agent-info">
+          <h3>Tania Wahl</h3>
+          <span class="ws-agent-role">Real Estate Agent</span>
+          <div class="ws-agent-contact">
+            <a href="tel:+17043807677" class="ws-agent-call">
+              Call Agent ↗
+            </a>
+            <a href="mailto:TaniaWahl@whitestagrealtync.com" class="ws-agent-email">
+              Email ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- JOANNA DILMAGHANI -->
+      <article class="ws-agent">
+        <div class="ws-agent-photo">
+          <img
+            src="agents/joanna-dilmaghani.jpg"
+            alt="Joanna Dilmaghani, White Stag Realty"
+            loading="lazy">
+        </div>
+
+        <div class="ws-agent-info">
+          <h3>Joanna Dilmaghani</h3>
+          <span class="ws-agent-role">Real Estate Agent</span>
+          <div class="ws-agent-contact">
+            <a href="tel:+19802883511" class="ws-agent-call">
+              Call Agent ↗
+            </a>
+            <a href="mailto:joannadilmaghani@whitestagrealtync.com" class="ws-agent-email">
+              Email ↗
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="ws-team-bottom">
+      <p>
+        The right real estate journey starts with
+        the right people.
+      </p>
+
+      <a href="#contact" class="ws-team-cta">
+        Connect With Our Team <span>↗</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- END WHITE STAG TEAM -->
+
     <!-- REVIEWS -->
     <section class="section" id="reviews">
       <div class="container">
